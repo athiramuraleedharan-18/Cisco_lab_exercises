@@ -49,3 +49,26 @@ print(my_list)
 del my_list
 print(my_list)
 
+#To check for greater value in the list
+'''my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest=my_list[0] #Compare the rest of the elements with largest
+
+for i in range(1,len(my_list)):
+  if my_list[i] > largest:
+    largest = my_list[i]
+
+print(largest )'''
+
+my_list=[17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest=my_list[0]
+'''
+for i in my_list: #here the 1st element is compared to it unnecessarily
+  if i > largest:
+    largest = i
+print(largest)'''
+
+#to avoid that we can use slicing
+for i in my_list[1:]:
+  if i > largest:
+    largest = i
+print(largest)
