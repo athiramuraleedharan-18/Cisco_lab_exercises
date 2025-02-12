@@ -60,3 +60,10 @@ del list_1[0] #list_1,list_2 and list_3 = ["B","C"] memory updated
 del list_2[0] #list_1,list_2 and list_3 = ["C"] memory updated
 print(list_3) #["C"]
 
+list_1=["A","B","C"] #all point to same memory location
+list_2=list_1
+list_3=list_2
+
+del list_1[0] #list_1,list_2 and list_3 = ["B","C"] memory updated 
+del list_2 #here list_2 is deleted but list_1 and list_3 points to same memory with ["B","C"] 
+print(list_3) 
