@@ -67,6 +67,22 @@ for i in my_list: #here the 1st element is compared to it unnecessarily
     largest = i
 print(largest)'''
 
+#Find the location of an element in a list
+my_list=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+to_find=5 #element to be searched for in the list
+found=False #flag
+
+for i in range(len(my_list)):
+  found=my_list[i]==to_find
+  if found:
+    break
+
+if found:
+  print(str(to_find)+" found at index : "+str(i))
+else:
+  print("absent")
+
+
 #to avoid that we can use slicing
 for i in my_list[1:]:
   if i > largest:
