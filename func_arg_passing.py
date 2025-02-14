@@ -15,3 +15,10 @@ subtra(b=2,a=5)
 #mixed positional and keyword argument passing
 subtra(5,b=2)
 #PS: 1st positional parameters have to be given followed by keyword ..order matters here
+
+#Pre-defined or parametrized functions
+def name(first_name,last_name="Smith"):
+  print(first_name, last_name)
+
+name("Andy")#Takes last_name by default as "Smith"
+name("Betty", "Johnson")#"Johnson" shadows the default value.
