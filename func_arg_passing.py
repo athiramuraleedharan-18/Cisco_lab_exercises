@@ -22,3 +22,9 @@ def name(first_name,last_name="Smith"):
 
 name("Andy")#Takes last_name by default as "Smith"
 name("Betty", "Johnson")#"Johnson" shadows the default value.
+
+
+def add_numbers(a,b=2,c):
+  print(a+b+c)
+
+add_numbers(a=1,c=3) #Results in syntax error i.e. parameter without a default follows parameter with a default.
